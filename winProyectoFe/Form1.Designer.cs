@@ -36,6 +36,10 @@
             this.pbHelp = new System.Windows.Forms.PictureBox();
             this.pbHorca = new System.Windows.Forms.PictureBox();
             this.grpLetras = new System.Windows.Forms.GroupBox();
+            this.grbPalabra = new System.Windows.Forms.GroupBox();
+            this.lblVidas = new System.Windows.Forms.Label();
+            this.lblPuntos = new System.Windows.Forms.Label();
+            this.lblPregunta = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbRefresh)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbHome)).BeginInit();
@@ -46,7 +50,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(341, 29);
+            this.label1.Location = new System.Drawing.Point(46, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(53, 13);
             this.label1.TabIndex = 2;
@@ -55,7 +59,7 @@
             // pbRefresh
             // 
             this.pbRefresh.Image = ((System.Drawing.Image)(resources.GetObject("pbRefresh.Image")));
-            this.pbRefresh.Location = new System.Drawing.Point(653, 332);
+            this.pbRefresh.Location = new System.Drawing.Point(653, 360);
             this.pbRefresh.Name = "pbRefresh";
             this.pbRefresh.Size = new System.Drawing.Size(30, 30);
             this.pbRefresh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -65,17 +69,20 @@
             // pbExit
             // 
             this.pbExit.Image = global::winProyectoFe.Properties.Resources.exit1;
-            this.pbExit.Location = new System.Drawing.Point(689, 332);
+            this.pbExit.Location = new System.Drawing.Point(689, 360);
             this.pbExit.Name = "pbExit";
             this.pbExit.Size = new System.Drawing.Size(30, 30);
             this.pbExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbExit.TabIndex = 4;
             this.pbExit.TabStop = false;
+            this.pbExit.Click += new System.EventHandler(this.pbExit_Click);
+            this.pbExit.MouseLeave += new System.EventHandler(this.pbExit_MouseLeave);
+            this.pbExit.MouseHover += new System.EventHandler(this.pbExit_MouseHover);
             // 
             // pbHome
             // 
             this.pbHome.Image = ((System.Drawing.Image)(resources.GetObject("pbHome.Image")));
-            this.pbHome.Location = new System.Drawing.Point(617, 332);
+            this.pbHome.Location = new System.Drawing.Point(617, 360);
             this.pbHome.Name = "pbHome";
             this.pbHome.Size = new System.Drawing.Size(30, 30);
             this.pbHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -97,7 +104,7 @@
             // pbHorca
             // 
             this.pbHorca.Image = global::winProyectoFe.Properties.Resources.ah1;
-            this.pbHorca.Location = new System.Drawing.Point(12, 47);
+            this.pbHorca.Location = new System.Drawing.Point(12, 75);
             this.pbHorca.Name = "pbHorca";
             this.pbHorca.Size = new System.Drawing.Size(300, 300);
             this.pbHorca.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -106,18 +113,57 @@
             // 
             // grpLetras
             // 
-            this.grpLetras.Location = new System.Drawing.Point(344, 122);
+            this.grpLetras.Location = new System.Drawing.Point(344, 167);
             this.grpLetras.Name = "grpLetras";
             this.grpLetras.Size = new System.Drawing.Size(158, 140);
             this.grpLetras.TabIndex = 7;
             this.grpLetras.TabStop = false;
+            // 
+            // grbPalabra
+            // 
+            this.grbPalabra.Location = new System.Drawing.Point(344, 94);
+            this.grbPalabra.Name = "grbPalabra";
+            this.grbPalabra.Size = new System.Drawing.Size(258, 51);
+            this.grbPalabra.TabIndex = 8;
+            this.grbPalabra.TabStop = false;
+            // 
+            // lblVidas
+            // 
+            this.lblVidas.AutoSize = true;
+            this.lblVidas.Location = new System.Drawing.Point(12, 391);
+            this.lblVidas.Name = "lblVidas";
+            this.lblVidas.Size = new System.Drawing.Size(51, 13);
+            this.lblVidas.TabIndex = 9;
+            this.lblVidas.Text = "Vidas: 11";
+            // 
+            // lblPuntos
+            // 
+            this.lblPuntos.AutoSize = true;
+            this.lblPuntos.Location = new System.Drawing.Point(617, 28);
+            this.lblPuntos.Name = "lblPuntos";
+            this.lblPuntos.Size = new System.Drawing.Size(52, 13);
+            this.lblPuntos.TabIndex = 10;
+            this.lblPuntos.Text = "Puntos: 0";
+            // 
+            // lblPregunta
+            // 
+            this.lblPregunta.AutoSize = true;
+            this.lblPregunta.Location = new System.Drawing.Point(341, 48);
+            this.lblPregunta.Name = "lblPregunta";
+            this.lblPregunta.Size = new System.Drawing.Size(62, 13);
+            this.lblPregunta.TabIndex = 11;
+            this.lblPregunta.Text = "¿Pregunta?";
             // 
             // frmAhorcado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(740, 382);
+            this.ClientSize = new System.Drawing.Size(740, 411);
+            this.Controls.Add(this.lblPregunta);
+            this.Controls.Add(this.lblPuntos);
+            this.Controls.Add(this.lblVidas);
+            this.Controls.Add(this.grbPalabra);
             this.Controls.Add(this.grpLetras);
             this.Controls.Add(this.pbHorca);
             this.Controls.Add(this.pbRefresh);
@@ -145,6 +191,10 @@
         private System.Windows.Forms.PictureBox pbRefresh;
         private System.Windows.Forms.PictureBox pbHorca;
         private System.Windows.Forms.GroupBox grpLetras;
+        private System.Windows.Forms.GroupBox grbPalabra;
+        private System.Windows.Forms.Label lblVidas;
+        private System.Windows.Forms.Label lblPuntos;
+        private System.Windows.Forms.Label lblPregunta;
     }
 }
 

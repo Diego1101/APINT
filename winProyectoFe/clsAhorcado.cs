@@ -8,7 +8,7 @@ namespace winProyectoFe
 {
     class clsAhorcado
     {
-        private int Vidas = 11;
+        private int Vidas;
         public readonly string PalabrAux;
         private List<char> Palabra;
         private int Letras;
@@ -20,6 +20,7 @@ namespace winProyectoFe
             palabra = palabra.ToUpper();
             Palabra = palabra.ToList();
             Letras = palabra.Length;
+            Vidas = 11;
         }
 
         ~clsAhorcado()

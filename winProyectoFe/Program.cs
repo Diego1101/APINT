@@ -11,12 +11,15 @@ namespace winProyectoFe
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
+        /// 
+        static public frmMenu frm;
         [STAThread]
         static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmAhorcado());
+            frm = new frmMenu();
+            Application.Run(frm);
         }
     }
 }

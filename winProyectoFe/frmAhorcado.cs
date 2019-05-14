@@ -18,6 +18,7 @@ namespace winProyectoFe
         clsAhorcado obj;
         TextBox[] txt;
         int puntos;
+        int cont;
 
         public frmAhorcado()
         {
@@ -27,6 +28,12 @@ namespace winProyectoFe
             crearCajas(Palabra.Length);
             obj = new clsAhorcado(Palabra);
             puntos = 0;
+            cont = 0;
+            
+        }
+
+        ~frmAhorcado()
+        {
         }
 
         string obtenerPalabra()
@@ -105,13 +112,16 @@ namespace winProyectoFe
             switch (res)
             {
                 case 0:
+                    tmrSec.Enabled = false;
                     MessageBox.Show("Ganaste");
                     mostrarLetra(btn.Text.ElementAt(0));
                     grpLetras.Enabled = false;
+                    puntos -= (int)(cont * 2);                    
                     break;
 
 
                 case -2:
+                    tmrSec.Enabled = false;
                     MessageBox.Show("Perdiste");
                     grpLetras.Enabled = false;
                     for (int i = 0; i < obj.PalabrAux.Length; i++)
@@ -214,24 +224,104 @@ namespace winProyectoFe
 
         private void pbHome_Click(object sender, EventArgs e)
         {
-
+            Program.frm.Visible = true;
+            this.Dispose();
         }
 
         private void pbExit_Click(object sender, EventArgs e)
         {
             this.Dispose();
+            Program.frm.Dispose();
+        }
+
+        private void tmrSec_Tick(object sender, EventArgs e)
+        {
+            cont++;
+            lblTiempo.Text = cont.ToString() + " seg";
         }
 
         private void pbExit_MouseHover(object sender, EventArgs e)
         {
-            PictureBox obj = (PictureBox)sender;
-            obj.Size = new Size(35,35);
+            Control send = (Control)sender;
+            send.Size = new Size(35, 35);
         }
 
         private void pbExit_MouseLeave(object sender, EventArgs e)
         {
-            PictureBox obj = (PictureBox)sender;
-            obj.Size = new Size(30, 30);
+            
+            Control send = (Control)sender;
+            send.Size = new Size(30, 30);
+        }
+
+        private void pbRefresh_Click(object sender, EventArgs e)
+        {
+            frmAhorcado frm = new frmAhorcado();
+            frm.Visible = true;
+            this.Dispose();
+        }
+
+        private void frmAhorcado_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+            
+            string prueba;
+            if (e.KeyChar.Equals('ñ'))
+            {
+                prueba = "n-";
+            }
+            else
+            {
+                prueba = e.KeyChar.ToString();
+            }
+
+            if (grpLetras.Controls.Find("btn" + prueba, true)[0].Enabled == true)
+            {
+                int res = obj.probarLetra(e.KeyChar.ToString().ToUpper()[0]);
+                lblVidas.Text = "Vidas: " + obj.getVidas().ToString();
+
+                switch (res)
+                {
+                    case 0:
+                        tmrSec.Enabled = false;
+                        MessageBox.Show("Ganaste");
+                        mostrarLetra(e.KeyChar.ToString().ToUpper()[0]);
+                        grpLetras.Enabled = false;
+                        puntos -= (int)(cont * 2);
+                        break;
+
+
+                    case -2:
+                        tmrSec.Enabled = false;
+                        MessageBox.Show("Perdiste");
+                        grpLetras.Enabled = false;
+                        for (int i = 0; i < obj.PalabrAux.Length; i++)
+                        {
+                            txt[i].Text = obj.PalabrAux[i].ToString();
+                        }
+                        puntos = 0;
+                        break;
+
+                    case -1:
+                        //letra incorrecta
+                        puntos -= 50;
+                        break;
+
+                    default:
+                        mostrarLetra(e.KeyChar.ToString().ToUpper()[0]);
+                        puntos += 100;
+                        break;
+                }
+                lblPuntos.Text = "Puntos: " + puntos.ToString();
+                grpLetras.Controls.Find("btn" + prueba, true)[0].Enabled = false;
+                actualizarImagen(obj.getVidas());
+            }
+            else
+            {
+                //MessageBox.Show("Ocupada");
+
+            }
+
+
         }
     }
 }

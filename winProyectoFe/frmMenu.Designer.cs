@@ -31,7 +31,6 @@
             this.btnQuiz = new System.Windows.Forms.Button();
             this.btnAhorcado = new System.Windows.Forms.Button();
             this.btnTest = new System.Windows.Forms.Button();
-            this.btnPuntajes = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.btnTopo = new System.Windows.Forms.Button();
             this.pbExit = new System.Windows.Forms.PictureBox();
@@ -61,21 +60,12 @@
             // 
             // btnTest
             // 
-            this.btnTest.Location = new System.Drawing.Point(40, 148);
+            this.btnTest.Location = new System.Drawing.Point(40, 143);
             this.btnTest.Name = "btnTest";
             this.btnTest.Size = new System.Drawing.Size(75, 23);
             this.btnTest.TabIndex = 2;
             this.btnTest.Text = "Test";
             this.btnTest.UseVisualStyleBackColor = true;
-            // 
-            // btnPuntajes
-            // 
-            this.btnPuntajes.Location = new System.Drawing.Point(40, 177);
-            this.btnPuntajes.Name = "btnPuntajes";
-            this.btnPuntajes.Size = new System.Drawing.Size(75, 23);
-            this.btnPuntajes.TabIndex = 4;
-            this.btnPuntajes.Text = "Puntajes";
-            this.btnPuntajes.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -100,7 +90,7 @@
             // pbExit
             // 
             this.pbExit.Image = global::winProyectoFe.Properties.Resources.exit1;
-            this.pbExit.Location = new System.Drawing.Point(127, 224);
+            this.pbExit.Location = new System.Drawing.Point(127, 185);
             this.pbExit.Name = "pbExit";
             this.pbExit.Size = new System.Drawing.Size(20, 20);
             this.pbExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -112,7 +102,7 @@
             // 
             // btnCreditos
             // 
-            this.btnCreditos.Location = new System.Drawing.Point(40, 206);
+            this.btnCreditos.Location = new System.Drawing.Point(42, 172);
             this.btnCreditos.Name = "btnCreditos";
             this.btnCreditos.Size = new System.Drawing.Size(75, 23);
             this.btnCreditos.TabIndex = 8;
@@ -125,13 +115,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(159, 256);
+            this.ClientSize = new System.Drawing.Size(159, 217);
             this.ControlBox = false;
             this.Controls.Add(this.btnCreditos);
             this.Controls.Add(this.btnTopo);
             this.Controls.Add(this.pbExit);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.btnPuntajes);
             this.Controls.Add(this.btnTest);
             this.Controls.Add(this.btnAhorcado);
             this.Controls.Add(this.btnQuiz);
@@ -148,7 +137,6 @@
         private System.Windows.Forms.Button btnQuiz;
         private System.Windows.Forms.Button btnAhorcado;
         private System.Windows.Forms.Button btnTest;
-        private System.Windows.Forms.Button btnPuntajes;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pbExit;
         private System.Windows.Forms.Button btnTopo;

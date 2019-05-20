@@ -62,7 +62,7 @@
             // 
             // grpLetras
             // 
-            this.grpLetras.Location = new System.Drawing.Point(344, 167);
+            this.grpLetras.Location = new System.Drawing.Point(344, 199);
             this.grpLetras.Name = "grpLetras";
             this.grpLetras.Size = new System.Drawing.Size(158, 140);
             this.grpLetras.TabIndex = 7;
@@ -70,7 +70,7 @@
             // 
             // grbPalabra
             // 
-            this.grbPalabra.Location = new System.Drawing.Point(344, 94);
+            this.grbPalabra.Location = new System.Drawing.Point(344, 126);
             this.grbPalabra.Name = "grbPalabra";
             this.grbPalabra.Size = new System.Drawing.Size(258, 51);
             this.grbPalabra.TabIndex = 8;
@@ -97,7 +97,7 @@
             // lblPregunta
             // 
             this.lblPregunta.AutoSize = true;
-            this.lblPregunta.Location = new System.Drawing.Point(341, 48);
+            this.lblPregunta.Location = new System.Drawing.Point(341, 75);
             this.lblPregunta.Name = "lblPregunta";
             this.lblPregunta.Size = new System.Drawing.Size(62, 13);
             this.lblPregunta.TabIndex = 11;

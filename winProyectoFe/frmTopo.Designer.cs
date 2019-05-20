@@ -47,7 +47,7 @@
             // pbExit
             // 
             this.pbExit.Image = global::winProyectoFe.Properties.Resources.exit1;
-            this.pbExit.Location = new System.Drawing.Point(375, 129);
+            this.pbExit.Location = new System.Drawing.Point(375, 143);
             this.pbExit.Name = "pbExit";
             this.pbExit.Size = new System.Drawing.Size(20, 20);
             this.pbExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -60,7 +60,7 @@
             // pbHome
             // 
             this.pbHome.Image = ((System.Drawing.Image)(resources.GetObject("pbHome.Image")));
-            this.pbHome.Location = new System.Drawing.Point(349, 129);
+            this.pbHome.Location = new System.Drawing.Point(349, 143);
             this.pbHome.Name = "pbHome";
             this.pbHome.Size = new System.Drawing.Size(20, 20);
             this.pbHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -82,7 +82,7 @@
             // 
             // grpOp
             // 
-            this.grpOp.Location = new System.Drawing.Point(66, 64);
+            this.grpOp.Location = new System.Drawing.Point(36, 61);
             this.grpOp.Name = "grpOp";
             this.grpOp.Size = new System.Drawing.Size(251, 89);
             this.grpOp.TabIndex = 10;
@@ -134,7 +134,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(407, 164);
+            this.ClientSize = new System.Drawing.Size(407, 175);
             this.ControlBox = false;
             this.Controls.Add(this.lblTiempo);
             this.Controls.Add(this.lblPuntos);

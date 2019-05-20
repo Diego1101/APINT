@@ -18,9 +18,7 @@ namespace winProyectoFe
         Button aux;
         Button[] btn;
         Stopwatch sp;
-        int puntos;
-        int time;
-        int preg;
+        int puntos, time, preg, tp;
 
         public frmTopo()
         {
@@ -32,7 +30,7 @@ namespace winProyectoFe
             puntos = 0;
             time = 0;
             preg = 5;
-                        
+            tp = 10;           
         }
 
         void generarBotones()
@@ -113,7 +111,8 @@ namespace winProyectoFe
             lblPuntos.Text = "Puntos: " + puntos.ToString();
 
             preg--;
-            if (preg > 0)
+            tp--;
+            if (preg > 0 && tp>0)
             {
                 
                 mostrarPregunta();

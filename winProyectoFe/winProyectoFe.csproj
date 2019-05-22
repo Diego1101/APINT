@@ -47,7 +47,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="clsAhorcado.cs" />
+<<<<<<< HEAD
     <Compile Include="frmAhorcado.cs">
+=======
+    <Compile Include="clsQuiz.cs" />
+    <Compile Include="Form1.cs">
+>>>>>>> 240449b92dba4e9041562bebd35dfae0c21d36c4
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmAhorcado.Designer.cs">
@@ -71,6 +76,12 @@
     <Compile Include="frmTopo.Designer.cs">
       <DependentUpon>frmTopo.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmQuiz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQuiz.Designer.cs">
+      <DependentUpon>frmQuiz.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmAhorcado.resx">
@@ -84,6 +95,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmTopo.resx">
       <DependentUpon>frmTopo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQuiz.resx">
+      <DependentUpon>frmQuiz.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -124,9 +138,14 @@
     <Content Include="icons\exit.png" />
     <Content Include="icons\home.png" />
     <Content Include="icons\menu.png" />
+    <Content Include="icons\next.png" />
     <Content Include="icons\refresh.png" />
+<<<<<<< HEAD
     <Content Include="Preguntas\Ahorcado.txt" />
     <Content Include="Preguntas\Topo.txt" />
+=======
+    <None Include="Resources\next.png" />
+>>>>>>> 240449b92dba4e9041562bebd35dfae0c21d36c4
   </ItemGroup>
   <ItemGroup>
     <None Include="icons\help.png" />

@@ -18,8 +18,12 @@ namespace winProyectoFe
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+<<<<<<< HEAD
             frm = new frmMenu();
             Application.Run(frm);
+=======
+            Application.Run(new frmQuiz());
+>>>>>>> 240449b92dba4e9041562bebd35dfae0c21d36c4
         }
     }
 }

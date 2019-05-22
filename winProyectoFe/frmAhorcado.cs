@@ -323,5 +323,10 @@ namespace winProyectoFe
 
 
         }
+
+        private void frmAhorcado_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -233,5 +233,10 @@ namespace winProyectoFe
             PictureBox obj = (PictureBox)sender;
             obj.Size = new Size(30, 30);
         }
+
+        private void frmAhorcado_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

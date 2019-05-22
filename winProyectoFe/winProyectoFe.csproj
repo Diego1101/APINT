@@ -47,16 +47,26 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="clsAhorcado.cs" />
+    <Compile Include="clsQuiz.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmQuiz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQuiz.Designer.cs">
+      <DependentUpon>frmQuiz.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQuiz.resx">
+      <DependentUpon>frmQuiz.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -97,7 +107,9 @@
     <Content Include="icons\exit.png" />
     <Content Include="icons\home.png" />
     <Content Include="icons\menu.png" />
+    <Content Include="icons\next.png" />
     <Content Include="icons\refresh.png" />
+    <None Include="Resources\next.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="icons\help.png" />

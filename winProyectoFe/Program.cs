@@ -16,7 +16,7 @@ namespace winProyectoFe
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmAhorcado());
+            Application.Run(new frmQuiz());
         }
     }
 }

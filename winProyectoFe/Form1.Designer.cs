@@ -50,18 +50,20 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(46, 9);
+            this.label1.Location = new System.Drawing.Point(69, 14);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(53, 13);
+            this.label1.Size = new System.Drawing.Size(78, 20);
             this.label1.TabIndex = 2;
             this.label1.Text = "Ahorcado";
             // 
             // pbRefresh
             // 
             this.pbRefresh.Image = ((System.Drawing.Image)(resources.GetObject("pbRefresh.Image")));
-            this.pbRefresh.Location = new System.Drawing.Point(653, 360);
+            this.pbRefresh.Location = new System.Drawing.Point(980, 554);
+            this.pbRefresh.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pbRefresh.Name = "pbRefresh";
-            this.pbRefresh.Size = new System.Drawing.Size(30, 30);
+            this.pbRefresh.Size = new System.Drawing.Size(45, 46);
             this.pbRefresh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbRefresh.TabIndex = 5;
             this.pbRefresh.TabStop = false;
@@ -69,9 +71,10 @@
             // pbExit
             // 
             this.pbExit.Image = global::winProyectoFe.Properties.Resources.exit1;
-            this.pbExit.Location = new System.Drawing.Point(689, 360);
+            this.pbExit.Location = new System.Drawing.Point(1034, 554);
+            this.pbExit.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pbExit.Name = "pbExit";
-            this.pbExit.Size = new System.Drawing.Size(30, 30);
+            this.pbExit.Size = new System.Drawing.Size(45, 46);
             this.pbExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbExit.TabIndex = 4;
             this.pbExit.TabStop = false;
@@ -82,9 +85,10 @@
             // pbHome
             // 
             this.pbHome.Image = ((System.Drawing.Image)(resources.GetObject("pbHome.Image")));
-            this.pbHome.Location = new System.Drawing.Point(617, 360);
+            this.pbHome.Location = new System.Drawing.Point(926, 554);
+            this.pbHome.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pbHome.Name = "pbHome";
-            this.pbHome.Size = new System.Drawing.Size(30, 30);
+            this.pbHome.Size = new System.Drawing.Size(45, 46);
             this.pbHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbHome.TabIndex = 3;
             this.pbHome.TabStop = false;
@@ -93,9 +97,10 @@
             // pbHelp
             // 
             this.pbHelp.Image = ((System.Drawing.Image)(resources.GetObject("pbHelp.Image")));
-            this.pbHelp.Location = new System.Drawing.Point(698, 12);
+            this.pbHelp.Location = new System.Drawing.Point(1047, 18);
+            this.pbHelp.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pbHelp.Name = "pbHelp";
-            this.pbHelp.Size = new System.Drawing.Size(30, 30);
+            this.pbHelp.Size = new System.Drawing.Size(45, 46);
             this.pbHelp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbHelp.TabIndex = 1;
             this.pbHelp.TabStop = false;
@@ -104,62 +109,70 @@
             // pbHorca
             // 
             this.pbHorca.Image = global::winProyectoFe.Properties.Resources.ah1;
-            this.pbHorca.Location = new System.Drawing.Point(12, 75);
+            this.pbHorca.Location = new System.Drawing.Point(18, 115);
+            this.pbHorca.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pbHorca.Name = "pbHorca";
-            this.pbHorca.Size = new System.Drawing.Size(300, 300);
+            this.pbHorca.Size = new System.Drawing.Size(450, 462);
             this.pbHorca.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbHorca.TabIndex = 6;
             this.pbHorca.TabStop = false;
             // 
             // grpLetras
             // 
-            this.grpLetras.Location = new System.Drawing.Point(344, 167);
+            this.grpLetras.Location = new System.Drawing.Point(516, 258);
+            this.grpLetras.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.grpLetras.Name = "grpLetras";
-            this.grpLetras.Size = new System.Drawing.Size(158, 140);
+            this.grpLetras.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.grpLetras.Size = new System.Drawing.Size(237, 215);
             this.grpLetras.TabIndex = 7;
             this.grpLetras.TabStop = false;
             // 
             // grbPalabra
             // 
-            this.grbPalabra.Location = new System.Drawing.Point(344, 94);
+            this.grbPalabra.Location = new System.Drawing.Point(516, 145);
+            this.grbPalabra.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.grbPalabra.Name = "grbPalabra";
-            this.grbPalabra.Size = new System.Drawing.Size(258, 51);
+            this.grbPalabra.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.grbPalabra.Size = new System.Drawing.Size(387, 78);
             this.grbPalabra.TabIndex = 8;
             this.grbPalabra.TabStop = false;
             // 
             // lblVidas
             // 
             this.lblVidas.AutoSize = true;
-            this.lblVidas.Location = new System.Drawing.Point(12, 391);
+            this.lblVidas.Location = new System.Drawing.Point(18, 602);
+            this.lblVidas.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblVidas.Name = "lblVidas";
-            this.lblVidas.Size = new System.Drawing.Size(51, 13);
+            this.lblVidas.Size = new System.Drawing.Size(75, 20);
             this.lblVidas.TabIndex = 9;
             this.lblVidas.Text = "Vidas: 11";
             // 
             // lblPuntos
             // 
             this.lblPuntos.AutoSize = true;
-            this.lblPuntos.Location = new System.Drawing.Point(617, 28);
+            this.lblPuntos.Location = new System.Drawing.Point(926, 43);
+            this.lblPuntos.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPuntos.Name = "lblPuntos";
-            this.lblPuntos.Size = new System.Drawing.Size(52, 13);
+            this.lblPuntos.Size = new System.Drawing.Size(76, 20);
             this.lblPuntos.TabIndex = 10;
             this.lblPuntos.Text = "Puntos: 0";
             // 
             // lblPregunta
             // 
             this.lblPregunta.AutoSize = true;
-            this.lblPregunta.Location = new System.Drawing.Point(341, 48);
+            this.lblPregunta.Location = new System.Drawing.Point(512, 74);
+            this.lblPregunta.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPregunta.Name = "lblPregunta";
-            this.lblPregunta.Size = new System.Drawing.Size(62, 13);
+            this.lblPregunta.Size = new System.Drawing.Size(92, 20);
             this.lblPregunta.TabIndex = 11;
             this.lblPregunta.Text = "¿Pregunta?";
             // 
             // frmAhorcado
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(740, 411);
+            this.ClientSize = new System.Drawing.Size(1110, 632);
             this.Controls.Add(this.lblPregunta);
             this.Controls.Add(this.lblPuntos);
             this.Controls.Add(this.lblVidas);
@@ -171,8 +184,10 @@
             this.Controls.Add(this.pbHome);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pbHelp);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmAhorcado";
             this.Text = "Ahorcado";
+            this.Load += new System.EventHandler(this.frmAhorcado_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbRefresh)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbExit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbHome)).EndInit();

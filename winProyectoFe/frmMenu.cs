@@ -19,6 +19,9 @@ namespace winProyectoFe
 
         private void btnQuiz_Click(object sender, EventArgs e)
         {
+            frmQuiz frm = new frmQuiz();
+            frm.Visible = true;
+            this.Visible = false;
 
         }
 

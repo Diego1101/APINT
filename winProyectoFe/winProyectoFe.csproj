@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="clsAhorcado.cs" />
+    <Compile Include="clsQuiz.cs" />
     <Compile Include="frmAhorcado.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -65,6 +66,12 @@
     <Compile Include="frmMenu.Designer.cs">
       <DependentUpon>frmMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmQuiz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQuiz.designer.cs">
+      <DependentUpon>frmQuiz.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmTopo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,6 +88,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmMenu.resx">
       <DependentUpon>frmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQuiz.resx">
+      <DependentUpon>frmQuiz.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmTopo.resx">
       <DependentUpon>frmTopo.cs</DependentUpon>

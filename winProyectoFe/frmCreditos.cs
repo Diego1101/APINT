@@ -22,7 +22,7 @@ namespace winProyectoFe
 
         private void pbExit_Click(object sender, EventArgs e)
         {
-            this.Dispose();
+            this.Close();
         }
 
         private void C_MouseHover(object sender, EventArgs e)

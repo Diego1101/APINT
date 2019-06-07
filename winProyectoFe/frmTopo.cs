@@ -31,8 +31,7 @@ namespace winProyectoFe
             mostrarPregunta();
             puntos = 0;
             time = 0;
-            preg = 5;
-                        
+            preg = 10;
         }
 
         void generarBotones()

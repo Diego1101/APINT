@@ -29,13 +29,10 @@ namespace winProyectoFe
             obj = new clsQuiz(Palabra);
         }
 
-
-
         private void frmQuiz_Load(object sender, EventArgs e)
         {
 
         }
-
 
         string obtenerPregunta()
         {
@@ -54,11 +51,10 @@ namespace winProyectoFe
             return pregunta[0];
         }
  
-
         private void crearCajas(int n)
         {
             ra = new RadioButton[4];
-            String[] opc = System.IO.File.ReadAllLines("C:\\Users\\1041029699\\Desktop\\Quiz.txt");
+            String[] opc = System.IO.File.ReadAllLines("...\\Preguntas\\Quiz.txt");
             string[] op = opc[Pre+1].Split(',');
 
             for (int i = 0; i < 4; i++)
@@ -68,20 +64,27 @@ namespace winProyectoFe
                 ra[i].Name = "txt" + i.ToString();
                 ra[i].Text = op[i];
                 ra[i].Enabled = true;
+                ra[i].Click += FrmQuiz_Click;
                 gbRespuestas.Controls.Add(ra[i]);
 
             }
         }
 
+        private void FrmQuiz_Click(object sender, EventArgs e)
+        {
+            pbNext_Click(sender, e);
+        }
+
         private void pbSalir_Click(object sender, EventArgs e)
         {
+            Program.frm.Dispose();
             this.Dispose();
         }
 
         private void pbNext_Click(object sender, EventArgs e)
         {
             comp = "";
-            if (cont <= 5)
+            if (cont <= 10)
             {
                 for (int i = 0; i < 4; i++)
                 {
@@ -93,13 +96,13 @@ namespace winProyectoFe
 
                 if (comp == pregunta[1])
                 {
-                    MessageBox.Show("Correcto");
+                    //MessageBox.Show("Correcto");
                     p= p + 10;
                     lblPuntaje.Text = "Puntaje:" + p.ToString();
                 }
                 else
                 {
-                    MessageBox.Show("Incorrecto");
+                    //MessageBox.Show("Incorrecto");
 
                     p = p - 5;
                     lblPuntaje.Text = "Puntaje:"+ p.ToString();
@@ -109,13 +112,14 @@ namespace winProyectoFe
                 crearCajas(Palabra.Length);
                 obj = new clsQuiz(Palabra);
                 cont++;
-                if (cont == 6)
+                if (cont == 11)
                 {
-                    MessageBox.Show("Juego terminado");
+                    if (p < 0) p = 0;
+                    MessageBox.Show("Obtuviste: "+p.ToString()+" puntos");
                 }
                 else
                 {
-                    lblnump.Text = cont.ToString() + "/5";
+                    lblnump.Text = cont.ToString() + "/10";
                 }
             }
         }

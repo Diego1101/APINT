@@ -19,6 +19,9 @@ namespace winProyectoFe
 
         private void btnQuiz_Click(object sender, EventArgs e)
         {
+            frmQuiz frm = new frmQuiz();
+            frm.Visible = true;
+            this.Visible = false;
 
         }
 
@@ -58,6 +61,13 @@ namespace winProyectoFe
         {
             frmCreditos frm = new frmCreditos();
             frm.ShowDialog();
+        }
+
+        private void btnTest_Click(object sender, EventArgs e)
+        {
+            frmTest frm = new frmTest();
+            frm.Visible = true;
+            this.Visible = false;
         }
     }
 }

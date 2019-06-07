@@ -82,7 +82,7 @@
             // 
             // grpOp
             // 
-            this.grpOp.Location = new System.Drawing.Point(66, 64);
+            this.grpOp.Location = new System.Drawing.Point(23, 48);
             this.grpOp.Name = "grpOp";
             this.grpOp.Size = new System.Drawing.Size(251, 89);
             this.grpOp.TabIndex = 10;

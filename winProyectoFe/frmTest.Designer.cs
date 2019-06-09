@@ -37,12 +37,11 @@
             this.rdbSi = new System.Windows.Forms.RadioButton();
             this.pbHome = new System.Windows.Forms.PictureBox();
             this.pbAyuda = new System.Windows.Forms.PictureBox();
-            this.pbSalir = new System.Windows.Forms.PictureBox();
             this.lblTipo = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.grpPregunta.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbHome)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbAyuda)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbSalir)).BeginInit();
             this.SuspendLayout();
             // 
             // lblTitulo
@@ -61,7 +60,7 @@
             this.grpPregunta.Controls.Add(this.lblPreg);
             this.grpPregunta.Controls.Add(this.rdbNo);
             this.grpPregunta.Controls.Add(this.rdbSi);
-            this.grpPregunta.Location = new System.Drawing.Point(12, 70);
+            this.grpPregunta.Location = new System.Drawing.Point(12, 57);
             this.grpPregunta.Name = "grpPregunta";
             this.grpPregunta.Size = new System.Drawing.Size(430, 129);
             this.grpPregunta.TabIndex = 1;
@@ -116,7 +115,7 @@
             // 
             this.pbHome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.pbHome.Image = ((System.Drawing.Image)(resources.GetObject("pbHome.Image")));
-            this.pbHome.Location = new System.Drawing.Point(572, 249);
+            this.pbHome.Location = new System.Drawing.Point(428, 192);
             this.pbHome.Name = "pbHome";
             this.pbHome.Size = new System.Drawing.Size(27, 26);
             this.pbHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -127,25 +126,13 @@
             // pbAyuda
             // 
             this.pbAyuda.Image = global::winProyectoFe.Properties.Resources.help;
-            this.pbAyuda.Location = new System.Drawing.Point(604, 11);
+            this.pbAyuda.Location = new System.Drawing.Point(430, 13);
             this.pbAyuda.Margin = new System.Windows.Forms.Padding(2);
             this.pbAyuda.Name = "pbAyuda";
             this.pbAyuda.Size = new System.Drawing.Size(25, 26);
             this.pbAyuda.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbAyuda.TabIndex = 10;
             this.pbAyuda.TabStop = false;
-            // 
-            // pbSalir
-            // 
-            this.pbSalir.Image = global::winProyectoFe.Properties.Resources.exit;
-            this.pbSalir.Location = new System.Drawing.Point(604, 249);
-            this.pbSalir.Margin = new System.Windows.Forms.Padding(2);
-            this.pbSalir.Name = "pbSalir";
-            this.pbSalir.Size = new System.Drawing.Size(25, 26);
-            this.pbSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbSalir.TabIndex = 9;
-            this.pbSalir.TabStop = false;
-            this.pbSalir.Click += new System.EventHandler(this.pbSalir_Click);
             // 
             // lblTipo
             // 
@@ -157,27 +144,36 @@
             this.lblTipo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblTipo.Visible = false;
             // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(10, 204);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(384, 28);
+            this.label1.TabIndex = 13;
+            this.label1.Text = "NOTA: Este test es unicamente para entreteniemiento, los resultados no deben ser " +
+    "tomados como un analisis real";
+            // 
             // frmTest
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(641, 286);
+            this.ClientSize = new System.Drawing.Size(467, 241);
             this.ControlBox = false;
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.lblTipo);
             this.Controls.Add(this.pbHome);
             this.Controls.Add(this.pbAyuda);
-            this.Controls.Add(this.pbSalir);
             this.Controls.Add(this.grpPregunta);
             this.Controls.Add(this.lblTitulo);
             this.Name = "frmTest";
-            this.Text = "frmTest";
+            this.Text = "Test";
             this.Load += new System.EventHandler(this.frmTest_Load);
             this.grpPregunta.ResumeLayout(false);
             this.grpPregunta.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbHome)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbAyuda)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbSalir)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -191,9 +187,9 @@
         private System.Windows.Forms.RadioButton rdbSi;
         private System.Windows.Forms.PictureBox pbHome;
         private System.Windows.Forms.PictureBox pbAyuda;
-        private System.Windows.Forms.PictureBox pbSalir;
         private System.Windows.Forms.Label lblPreg;
         private System.Windows.Forms.RadioButton rdbH;
         private System.Windows.Forms.Label lblTipo;
+        private System.Windows.Forms.Label label1;
     }
 }

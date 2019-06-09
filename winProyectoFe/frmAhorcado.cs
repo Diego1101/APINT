@@ -113,8 +113,8 @@ namespace winProyectoFe
             {
                 case 0:
                     tmrSec.Enabled = false;
-                    MessageBox.Show("Ganaste");
                     mostrarLetra(btn.Text.ElementAt(0));
+                    MessageBox.Show("Ganaste");
                     grpLetras.Enabled = false;
                     puntos -= (int)(cont * 2);                    
                     break;
@@ -283,8 +283,8 @@ namespace winProyectoFe
                 {
                     case 0:
                         tmrSec.Enabled = false;
-                        MessageBox.Show("Ganaste");
                         mostrarLetra(e.KeyChar.ToString().ToUpper()[0]);
+                        MessageBox.Show("Ganaste");
                         grpLetras.Enabled = false;
                         puntos -= (int)(cont * 2);
                         break;

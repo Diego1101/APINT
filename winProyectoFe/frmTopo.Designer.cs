@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTopo));
-            this.pbExit = new System.Windows.Forms.PictureBox();
             this.pbHome = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.grpOp = new System.Windows.Forms.GroupBox();
@@ -39,30 +38,16 @@
             this.tmrTime = new System.Windows.Forms.Timer(this.components);
             this.lblTiempo = new System.Windows.Forms.Label();
             this.tmrColor = new System.Windows.Forms.Timer(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.pbExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbHome)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbHelp)).BeginInit();
             this.SuspendLayout();
             // 
-            // pbExit
-            // 
-            this.pbExit.Image = global::winProyectoFe.Properties.Resources.exit1;
-            this.pbExit.Location = new System.Drawing.Point(375, 129);
-            this.pbExit.Name = "pbExit";
-            this.pbExit.Size = new System.Drawing.Size(20, 20);
-            this.pbExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbExit.TabIndex = 7;
-            this.pbExit.TabStop = false;
-            this.pbExit.Click += new System.EventHandler(this.pbExit_Click);
-            this.pbExit.MouseLeave += new System.EventHandler(this.C_MouseLeave);
-            this.pbExit.MouseHover += new System.EventHandler(this.C_MouseHover);
-            // 
             // pbHome
             // 
             this.pbHome.Image = ((System.Drawing.Image)(resources.GetObject("pbHome.Image")));
-            this.pbHome.Location = new System.Drawing.Point(349, 129);
+            this.pbHome.Location = new System.Drawing.Point(332, 130);
             this.pbHome.Name = "pbHome";
-            this.pbHome.Size = new System.Drawing.Size(20, 20);
+            this.pbHome.Size = new System.Drawing.Size(25, 25);
             this.pbHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbHome.TabIndex = 8;
             this.pbHome.TabStop = false;
@@ -91,9 +76,9 @@
             // pbHelp
             // 
             this.pbHelp.Image = ((System.Drawing.Image)(resources.GetObject("pbHelp.Image")));
-            this.pbHelp.Location = new System.Drawing.Point(365, 9);
+            this.pbHelp.Location = new System.Drawing.Point(334, 12);
             this.pbHelp.Name = "pbHelp";
-            this.pbHelp.Size = new System.Drawing.Size(20, 20);
+            this.pbHelp.Size = new System.Drawing.Size(25, 25);
             this.pbHelp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbHelp.TabIndex = 11;
             this.pbHelp.TabStop = false;
@@ -103,7 +88,7 @@
             // lblPuntos
             // 
             this.lblPuntos.AutoSize = true;
-            this.lblPuntos.Location = new System.Drawing.Point(300, 26);
+            this.lblPuntos.Location = new System.Drawing.Point(280, 86);
             this.lblPuntos.Name = "lblPuntos";
             this.lblPuntos.Size = new System.Drawing.Size(52, 13);
             this.lblPuntos.TabIndex = 12;
@@ -118,7 +103,7 @@
             // lblTiempo
             // 
             this.lblTiempo.AutoSize = true;
-            this.lblTiempo.Location = new System.Drawing.Point(244, 26);
+            this.lblTiempo.Location = new System.Drawing.Point(280, 58);
             this.lblTiempo.Name = "lblTiempo";
             this.lblTiempo.Size = new System.Drawing.Size(54, 13);
             this.lblTiempo.TabIndex = 13;
@@ -134,7 +119,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(407, 164);
+            this.ClientSize = new System.Drawing.Size(369, 167);
             this.ControlBox = false;
             this.Controls.Add(this.lblTiempo);
             this.Controls.Add(this.lblPuntos);
@@ -142,10 +127,8 @@
             this.Controls.Add(this.grpOp);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pbHome);
-            this.Controls.Add(this.pbExit);
             this.Name = "frmTopo";
-            this.Text = "frmTopo";
-            ((System.ComponentModel.ISupportInitialize)(this.pbExit)).EndInit();
+            this.Text = "Topo";
             ((System.ComponentModel.ISupportInitialize)(this.pbHome)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbHelp)).EndInit();
             this.ResumeLayout(false);
@@ -154,8 +137,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox pbExit;
         private System.Windows.Forms.PictureBox pbHome;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox grpOp;

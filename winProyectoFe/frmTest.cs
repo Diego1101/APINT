@@ -61,37 +61,37 @@ namespace winProyectoFe
             {
                 if (Bud > Tao && Bud > Cr && Bud > Isl && Bud > Hin && Bud > Jud)
                 {
-                    MessageBox.Show("Budismo");
+                    MessageBox.Show("Tu religión es: Budismo");
                     Program.frm.Visible = true;
                     this.Dispose();
                 }
                 else if (Tao > Cr && Tao > Isl && Tao > Hin && Tao > Jud)
                 {
-                    MessageBox.Show("Taoismo");
+                    MessageBox.Show("Tu religión es: Taoismo");
                     Program.frm.Visible = true;
                     this.Dispose();
                 }
                 else if (Cr > Isl && Cr > Hin && Cr > Jud)
                 {
-                    MessageBox.Show("Cristianismo");
+                    MessageBox.Show("Tu religión es: Cristianismo");
                     Program.frm.Visible = true;
                     this.Dispose();
                 }
                 else if (Isl > Hin && Isl > Jud)
                 {
-                    MessageBox.Show("Islam");
+                    MessageBox.Show("Tu religión es: Islam");
                     Program.frm.Visible = true;
                     this.Dispose();
                 }
                 else if (Hin > Jud)
                 {
-                    MessageBox.Show("Hinduismo");
+                    MessageBox.Show("Tu religión es: Hinduismo");
                     Program.frm.Visible = true;
                     this.Dispose();
                 }
                 else
                 {
-                    MessageBox.Show("Judaismo");
+                    MessageBox.Show("Tu religión es: Judaismo");
                     Program.frm.Visible = true;
                     this.Dispose();
                 }

@@ -60,7 +60,7 @@ namespace winProyectoFe
             for (int i = 0; i < 4; i++)
             {
                 ra[i] = new RadioButton();
-                ra[i].Location = new Point(1, i*30);
+                ra[i].Location = new Point(5, i*30+20);
                 ra[i].Name = "txt" + i.ToString();
                 ra[i].Text = op[i];
                 ra[i].Enabled = true;
@@ -105,6 +105,7 @@ namespace winProyectoFe
                     //MessageBox.Show("Incorrecto");
 
                     p = p - 5;
+                    if (p < 0) p = 0;
                     lblPuntaje.Text = "Puntaje:"+ p.ToString();
                 }            
                 gbRespuestas.Controls.Clear();

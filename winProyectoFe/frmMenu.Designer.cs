@@ -126,7 +126,7 @@
             this.Controls.Add(this.btnAhorcado);
             this.Controls.Add(this.btnQuiz);
             this.Name = "frmMenu";
-            this.Text = "frmMenu";
+            this.Text = "Menu";
             ((System.ComponentModel.ISupportInitialize)(this.pbExit)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

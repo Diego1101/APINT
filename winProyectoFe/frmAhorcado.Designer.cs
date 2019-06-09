@@ -38,14 +38,12 @@
             this.lblPregunta = new System.Windows.Forms.Label();
             this.pbHorca = new System.Windows.Forms.PictureBox();
             this.pbRefresh = new System.Windows.Forms.PictureBox();
-            this.pbExit = new System.Windows.Forms.PictureBox();
             this.pbHome = new System.Windows.Forms.PictureBox();
             this.pbHelp = new System.Windows.Forms.PictureBox();
             this.tmrSec = new System.Windows.Forms.Timer(this.components);
             this.lblTiempo = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbHorca)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbRefresh)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbHome)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbHelp)).BeginInit();
             this.SuspendLayout();
@@ -54,7 +52,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(164, 28);
+            this.label1.Location = new System.Drawing.Point(93, 12);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(138, 31);
             this.label1.TabIndex = 2;
@@ -62,7 +60,7 @@
             // 
             // grpLetras
             // 
-            this.grpLetras.Location = new System.Drawing.Point(344, 167);
+            this.grpLetras.Location = new System.Drawing.Point(344, 201);
             this.grpLetras.Name = "grpLetras";
             this.grpLetras.Size = new System.Drawing.Size(158, 140);
             this.grpLetras.TabIndex = 7;
@@ -70,7 +68,7 @@
             // 
             // grbPalabra
             // 
-            this.grbPalabra.Location = new System.Drawing.Point(344, 94);
+            this.grbPalabra.Location = new System.Drawing.Point(344, 133);
             this.grbPalabra.Name = "grbPalabra";
             this.grbPalabra.Size = new System.Drawing.Size(258, 51);
             this.grbPalabra.TabIndex = 8;
@@ -79,7 +77,7 @@
             // lblVidas
             // 
             this.lblVidas.AutoSize = true;
-            this.lblVidas.Location = new System.Drawing.Point(12, 391);
+            this.lblVidas.Location = new System.Drawing.Point(354, 9);
             this.lblVidas.Name = "lblVidas";
             this.lblVidas.Size = new System.Drawing.Size(51, 13);
             this.lblVidas.TabIndex = 9;
@@ -88,7 +86,7 @@
             // lblPuntos
             // 
             this.lblPuntos.AutoSize = true;
-            this.lblPuntos.Location = new System.Drawing.Point(617, 28);
+            this.lblPuntos.Location = new System.Drawing.Point(486, 9);
             this.lblPuntos.Name = "lblPuntos";
             this.lblPuntos.Size = new System.Drawing.Size(52, 13);
             this.lblPuntos.TabIndex = 10;
@@ -96,12 +94,13 @@
             // 
             // lblPregunta
             // 
-            this.lblPregunta.AutoSize = true;
-            this.lblPregunta.Location = new System.Drawing.Point(341, 48);
+            this.lblPregunta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPregunta.Location = new System.Drawing.Point(344, 57);
             this.lblPregunta.Name = "lblPregunta";
-            this.lblPregunta.Size = new System.Drawing.Size(62, 13);
+            this.lblPregunta.Size = new System.Drawing.Size(258, 61);
             this.lblPregunta.TabIndex = 11;
             this.lblPregunta.Text = "¿Pregunta?";
+            this.lblPregunta.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pbHorca
             // 
@@ -116,7 +115,7 @@
             // pbRefresh
             // 
             this.pbRefresh.Image = ((System.Drawing.Image)(resources.GetObject("pbRefresh.Image")));
-            this.pbRefresh.Location = new System.Drawing.Point(653, 360);
+            this.pbRefresh.Location = new System.Drawing.Point(536, 349);
             this.pbRefresh.Name = "pbRefresh";
             this.pbRefresh.Size = new System.Drawing.Size(30, 30);
             this.pbRefresh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -126,23 +125,10 @@
             this.pbRefresh.MouseLeave += new System.EventHandler(this.pbExit_MouseLeave);
             this.pbRefresh.MouseHover += new System.EventHandler(this.pbExit_MouseHover);
             // 
-            // pbExit
-            // 
-            this.pbExit.Image = global::winProyectoFe.Properties.Resources.exit1;
-            this.pbExit.Location = new System.Drawing.Point(689, 360);
-            this.pbExit.Name = "pbExit";
-            this.pbExit.Size = new System.Drawing.Size(30, 30);
-            this.pbExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbExit.TabIndex = 4;
-            this.pbExit.TabStop = false;
-            this.pbExit.Click += new System.EventHandler(this.pbExit_Click);
-            this.pbExit.MouseLeave += new System.EventHandler(this.pbExit_MouseLeave);
-            this.pbExit.MouseHover += new System.EventHandler(this.pbExit_MouseHover);
-            // 
             // pbHome
             // 
             this.pbHome.Image = ((System.Drawing.Image)(resources.GetObject("pbHome.Image")));
-            this.pbHome.Location = new System.Drawing.Point(617, 360);
+            this.pbHome.Location = new System.Drawing.Point(572, 349);
             this.pbHome.Name = "pbHome";
             this.pbHome.Size = new System.Drawing.Size(30, 30);
             this.pbHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -155,7 +141,7 @@
             // pbHelp
             // 
             this.pbHelp.Image = ((System.Drawing.Image)(resources.GetObject("pbHelp.Image")));
-            this.pbHelp.Location = new System.Drawing.Point(698, 12);
+            this.pbHelp.Location = new System.Drawing.Point(572, 12);
             this.pbHelp.Name = "pbHelp";
             this.pbHelp.Size = new System.Drawing.Size(30, 30);
             this.pbHelp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -174,7 +160,7 @@
             // lblTiempo
             // 
             this.lblTiempo.AutoSize = true;
-            this.lblTiempo.Location = new System.Drawing.Point(526, 28);
+            this.lblTiempo.Location = new System.Drawing.Point(430, 9);
             this.lblTiempo.Name = "lblTiempo";
             this.lblTiempo.Size = new System.Drawing.Size(33, 13);
             this.lblTiempo.TabIndex = 12;
@@ -185,7 +171,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(740, 411);
+            this.ClientSize = new System.Drawing.Size(613, 391);
             this.ControlBox = false;
             this.Controls.Add(this.lblTiempo);
             this.Controls.Add(this.lblPregunta);
@@ -195,7 +181,6 @@
             this.Controls.Add(this.grpLetras);
             this.Controls.Add(this.pbHorca);
             this.Controls.Add(this.pbRefresh);
-            this.Controls.Add(this.pbExit);
             this.Controls.Add(this.pbHome);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pbHelp);
@@ -206,7 +191,6 @@
             this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.frmAhorcado_KeyPress);
             ((System.ComponentModel.ISupportInitialize)(this.pbHorca)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbRefresh)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbExit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbHome)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbHelp)).EndInit();
             this.ResumeLayout(false);
@@ -218,7 +202,6 @@
         private System.Windows.Forms.PictureBox pbHelp;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pbHome;
-        private System.Windows.Forms.PictureBox pbExit;
         private System.Windows.Forms.PictureBox pbRefresh;
         private System.Windows.Forms.PictureBox pbHorca;
         private System.Windows.Forms.GroupBox grpLetras;

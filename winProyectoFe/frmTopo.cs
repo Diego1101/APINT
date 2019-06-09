@@ -121,7 +121,7 @@ namespace winProyectoFe
             {
                 tmrTime.Enabled = false;
                 grpOp.Enabled = false;
-                MessageBox.Show("Juego terminado");
+                MessageBox.Show("Obtuviste: "+lblPuntos.Text+" puntos");
             }
          }
 
@@ -140,14 +140,14 @@ namespace winProyectoFe
         private void C_MouseHover(object sender, EventArgs e)
         {
             Control send = (Control)sender;
-            send.Size = new Size(25, 25);
+            send.Size = new Size(30, 30);
         }
 
         private void C_MouseLeave(object sender, EventArgs e)
         {
 
             Control send = (Control)sender;
-            send.Size = new Size(20, 20);
+            send.Size = new Size(25, 25);
         }
 
         private void tmrTime_Tick(object sender, EventArgs e)

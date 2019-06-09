@@ -32,31 +32,27 @@
             this.gbRespuestas = new System.Windows.Forms.GroupBox();
             this.lblPuntaje = new System.Windows.Forms.Label();
             this.lblPregunta = new System.Windows.Forms.Label();
-            this.pbNext = new System.Windows.Forms.PictureBox();
-            this.pbSalir = new System.Windows.Forms.PictureBox();
             this.pbAyuda = new System.Windows.Forms.PictureBox();
             this.lblnump = new System.Windows.Forms.Label();
             this.pbHome = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pbNext)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbSalir)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbAyuda)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbHome)).BeginInit();
             this.SuspendLayout();
             // 
             // gbRespuestas
             // 
-            this.gbRespuestas.Location = new System.Drawing.Point(67, 134);
+            this.gbRespuestas.Location = new System.Drawing.Point(41, 90);
             this.gbRespuestas.Margin = new System.Windows.Forms.Padding(2);
             this.gbRespuestas.Name = "gbRespuestas";
             this.gbRespuestas.Padding = new System.Windows.Forms.Padding(2);
-            this.gbRespuestas.Size = new System.Drawing.Size(284, 163);
+            this.gbRespuestas.Size = new System.Drawing.Size(261, 163);
             this.gbRespuestas.TabIndex = 1;
             this.gbRespuestas.TabStop = false;
             // 
             // lblPuntaje
             // 
             this.lblPuntaje.AutoSize = true;
-            this.lblPuntaje.Location = new System.Drawing.Point(355, 252);
+            this.lblPuntaje.Location = new System.Drawing.Point(38, 255);
             this.lblPuntaje.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPuntaje.Name = "lblPuntaje";
             this.lblPuntaje.Size = new System.Drawing.Size(49, 13);
@@ -65,42 +61,19 @@
             // 
             // lblPregunta
             // 
-            this.lblPregunta.Location = new System.Drawing.Point(64, 23);
+            this.lblPregunta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPregunta.Location = new System.Drawing.Point(38, 11);
             this.lblPregunta.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPregunta.Name = "lblPregunta";
-            this.lblPregunta.Size = new System.Drawing.Size(287, 51);
+            this.lblPregunta.Size = new System.Drawing.Size(264, 76);
             this.lblPregunta.TabIndex = 3;
             this.lblPregunta.Text = "Pregunta ";
             this.lblPregunta.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pbNext
-            // 
-            this.pbNext.InitialImage = global::winProyectoFe.Properties.Resources.refresh;
-            this.pbNext.Location = new System.Drawing.Point(395, 59);
-            this.pbNext.Margin = new System.Windows.Forms.Padding(2);
-            this.pbNext.Name = "pbNext";
-            this.pbNext.Size = new System.Drawing.Size(25, 26);
-            this.pbNext.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbNext.TabIndex = 5;
-            this.pbNext.TabStop = false;
-            this.pbNext.Click += new System.EventHandler(this.pbNext_Click);
-            // 
-            // pbSalir
-            // 
-            this.pbSalir.Image = global::winProyectoFe.Properties.Resources.exit;
-            this.pbSalir.Location = new System.Drawing.Point(487, 296);
-            this.pbSalir.Margin = new System.Windows.Forms.Padding(2);
-            this.pbSalir.Name = "pbSalir";
-            this.pbSalir.Size = new System.Drawing.Size(25, 26);
-            this.pbSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbSalir.TabIndex = 4;
-            this.pbSalir.TabStop = false;
-            this.pbSalir.Click += new System.EventHandler(this.pbSalir_Click);
-            // 
             // pbAyuda
             // 
             this.pbAyuda.Image = global::winProyectoFe.Properties.Resources.help;
-            this.pbAyuda.Location = new System.Drawing.Point(487, 9);
+            this.pbAyuda.Location = new System.Drawing.Point(340, 11);
             this.pbAyuda.Margin = new System.Windows.Forms.Padding(2);
             this.pbAyuda.Name = "pbAyuda";
             this.pbAyuda.Size = new System.Drawing.Size(25, 26);
@@ -111,18 +84,18 @@
             // lblnump
             // 
             this.lblnump.AutoSize = true;
-            this.lblnump.Location = new System.Drawing.Point(158, 92);
+            this.lblnump.Location = new System.Drawing.Point(39, 75);
             this.lblnump.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblnump.Name = "lblnump";
-            this.lblnump.Size = new System.Drawing.Size(24, 13);
+            this.lblnump.Size = new System.Drawing.Size(30, 13);
             this.lblnump.TabIndex = 7;
-            this.lblnump.Text = "1/5";
+            this.lblnump.Text = "1/10";
             // 
             // pbHome
             // 
             this.pbHome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.pbHome.Image = ((System.Drawing.Image)(resources.GetObject("pbHome.Image")));
-            this.pbHome.Location = new System.Drawing.Point(455, 296);
+            this.pbHome.Location = new System.Drawing.Point(340, 267);
             this.pbHome.Name = "pbHome";
             this.pbHome.Size = new System.Drawing.Size(27, 26);
             this.pbHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -135,13 +108,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(522, 333);
+            this.ClientSize = new System.Drawing.Size(379, 305);
             this.ControlBox = false;
             this.Controls.Add(this.pbHome);
             this.Controls.Add(this.lblnump);
             this.Controls.Add(this.pbAyuda);
-            this.Controls.Add(this.pbNext);
-            this.Controls.Add(this.pbSalir);
             this.Controls.Add(this.lblPregunta);
             this.Controls.Add(this.lblPuntaje);
             this.Controls.Add(this.gbRespuestas);
@@ -149,8 +120,6 @@
             this.Name = "frmQuiz";
             this.Text = "Quiz";
             this.Load += new System.EventHandler(this.frmQuiz_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pbNext)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbSalir)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbAyuda)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbHome)).EndInit();
             this.ResumeLayout(false);
@@ -162,8 +131,6 @@
         private System.Windows.Forms.GroupBox gbRespuestas;
         private System.Windows.Forms.Label lblPuntaje;
         private System.Windows.Forms.Label lblPregunta;
-        private System.Windows.Forms.PictureBox pbSalir;
-        private System.Windows.Forms.PictureBox pbNext;
         private System.Windows.Forms.PictureBox pbAyuda;
         private System.Windows.Forms.Label lblnump;
         private System.Windows.Forms.PictureBox pbHome;
